@@ -19,13 +19,13 @@ const Filters = ({quantity, brands, values, setValues, valuesCheckbox, setValues
         <FilterStyledInput
           type="number"
           value={values.min}
-          onChange={e => setValues({...values, min: +e.target.value})}
+          onChange={e => setValues({...values, min: +e.target.value || ''})}
           style={{borderRadius:'4px 0 0 4px', border: 'none', borderRight:'0.5px solid #DBDBDB'}}
         />
         <FilterStyledInput
           type="number"
           value={values.max}
-          onChange={e => setValues({...values, max: +e.target.value})}
+          onChange={e => setValues({...values, max: +e.target.value || ''})}
           style={{borderRadius:'0 4px 4px 0', border: 'none', borderLeft:'0.5px solid #DBDBDB'}}
         />
       </FilterStyledBoxInput>
