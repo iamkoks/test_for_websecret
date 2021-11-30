@@ -19,6 +19,7 @@ const Container = () => {
 
   useEffect(() => {
     run(values.min, values.max, valuesCheckbox)
+    // eslint-disable-next-line
   },[values, valuesCheckbox.length])
 
   const getProducts = async (min, max, brands) => {
