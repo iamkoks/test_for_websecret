@@ -66,4 +66,3 @@ export const CardButton = styled.div`
   justify-content: center;
   margin: 10px 16px;
 `
-

@@ -79,4 +79,3 @@ export const MobileCardLike = styled.img`
   height: 17px;
   padding-top: 10px;
 `
-

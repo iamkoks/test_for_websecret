@@ -1,3 +1,4 @@
+import like from './like.svg'
 import {
   MobileCardLike,
   MobileCardDescriptionBox,
@@ -9,7 +10,6 @@ import {
   MobileCardButton,
   MobileCardStyled
 } from "./mobileCardStyled";
-import like from './like.svg'
 
 const MobileCard = ({title, image, price, is_new, item, last_item}) => {
   return(
@@ -26,7 +26,6 @@ const MobileCard = ({title, image, price, is_new, item, last_item}) => {
           <MobileCardLike src={like}/>
         </MobileCardDescriptionBox>
       </MobileCardDescription>
-
     </MobileCardStyled>
   )
 }

@@ -1,14 +1,14 @@
-import {CardsStyled} from "./cards.styled";
+import {useEffect, useState} from "react";
 import {Card} from "./Card";
 import {MobileCard} from "./MobileCard";
-import {useEffect, useState} from "react";
+import {CardsStyled} from "./cards.styled";
 
-const Cards = ({products}) => {
-  const [isMobile, setIsmobile] = useState(false)
+const Cards = ({ products }) => {
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const resize = () =>  {
-      setIsmobile(window.innerWidth < 600);
+      setIsMobile(window.innerWidth < 600);
     };
 
     window.addEventListener("resize", resize);
@@ -19,7 +19,7 @@ const Cards = ({products}) => {
 
   return(
     <CardsStyled>
-      {products?.map((product,item) => (
+      {products?.map((product, item) => (
         isMobile ?
           <MobileCard
             key={product.id}
@@ -44,4 +44,4 @@ const Cards = ({products}) => {
   )
 }
 
-export {Cards}
+export { Cards }

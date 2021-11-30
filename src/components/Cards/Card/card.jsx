@@ -1,4 +1,12 @@
-import {CardStyled, CardImg, CardTitle, CardDescription, CardPrice, CardMarkup, CardButton} from "./card.styled";
+import {
+  CardStyled,
+  CardImg,
+  CardTitle,
+  CardDescription,
+  CardPrice,
+  CardMarkup,
+  CardButton
+} from "./card.styled";
 
 const Card = ({title, image, price, is_new}) => {
     return(

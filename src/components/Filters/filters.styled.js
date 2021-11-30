@@ -55,7 +55,11 @@ export const FilterStyledInput = styled.input`
   font-size: 14px;
   line-height: 140%;
   color: #1B1B1B;
-
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+  }
 `
 
 export const FilterCheckbox = styled.label`
@@ -75,4 +79,8 @@ export const FilterLabelText = styled.span`
 
 export const FilterStyledInputCheckbox = styled.input`
   accent-color: #7993A6;
+`
+
+export const FilterCheckBoxBox = styled.div`
+
 `
