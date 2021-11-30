@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const FiltersStyled = styled.div`
-  width: 230px;
+  width: 300px;
+  padding: 20px 0px 20px 40px;
+  @media (max-width: 800px) {
+    width: calc(100% - 40px);
+  }
 `
 
 export const FilterStyledDiscription = styled.div`
@@ -30,7 +34,12 @@ export const FilterStyledTitle = styled.div`
 `
 
 export const FilterStyledBoxInput = styled.div`
-  display:inline-block
+  display:inline-block;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid #A7A7A7;
+  }
 `
 
 export const FilterStyledInput = styled.input`
@@ -39,6 +48,14 @@ export const FilterStyledInput = styled.input`
   border: 1px solid #DBDBDB;
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+  padding-left: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #1B1B1B;
+
 `
 
 export const FilterCheckbox = styled.label`
@@ -57,6 +74,5 @@ export const FilterLabelText = styled.span`
 `
 
 export const FilterStyledInputCheckbox = styled.input`
-  background: #7993A6 !important;
-  border-radius: 4px;
+  accent-color: #7993A6;
 `

@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     font-size: 12px;
     line-height: 1.2;;
     font-weight: 400;
@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 1200px;
   }
 `;
 

@@ -1,14 +1,15 @@
-import {CardStyled, CardImg, CardTitle, CardDescription, CardPrice, CardMarkup} from "./card.styled";
+import {CardStyled, CardImg, CardTitle, CardDescription, CardPrice, CardMarkup, CardButton} from "./card.styled";
 
-const Card = () => {
+const Card = ({title, image, price, is_new}) => {
     return(
         <CardStyled>
-            <CardImg src='https://image.shutterstock.com/image-photo/film-lens-600w-157135019.jpg'/>
-            <CardTitle>Olympus OM-D E-M5</CardTitle>
+            <CardImg src={image}/>
+            <CardTitle>{title}</CardTitle>
             <CardDescription>
-                <CardPrice>28 000 ₽</CardPrice>
-                <CardMarkup>Новое</CardMarkup>
+                <CardPrice>{price}₽</CardPrice>
+                {is_new ? <CardMarkup>Новое</CardMarkup> : null}
             </CardDescription>
+            <CardButton>В корзину</CardButton>
         </CardStyled>
     )
 }

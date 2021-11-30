@@ -1,9 +1,9 @@
 import {FilterCheckbox, FilterLabelText, FilterStyledInputCheckbox} from "../filters.styled";
 
-const Checkbox = ({title, onClick}) => {
+const Checkbox = ({title}) => {
   return(
     <FilterCheckbox>
-      <FilterStyledInputCheckbox type="checkbox" checked={}/>
+      <FilterStyledInputCheckbox type="checkbox"/>
       <FilterLabelText>{title}</FilterLabelText>
     </FilterCheckbox>
   )
